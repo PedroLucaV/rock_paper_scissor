@@ -6,7 +6,7 @@ while True:
     yourChoice = None
 
     while yourChoice not in choices:
-        yourChoice = input('Rock, Paper or Scissor? ')
+        yourChoice = input('Rock, Paper or Scissor? ').lower()
 
     print("PC: ", pcChoice)
     print("You: ", yourChoice)
