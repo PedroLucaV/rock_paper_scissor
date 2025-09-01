@@ -6,7 +6,11 @@ while True:
     yourChoice = None
 
     while yourChoice not in choices:
-        yourChoice = input('Rock, Paper or Scissor? ').lower()
+        yourChoice = input('Rock, Paper or Scissor? (or Quit to exit): ').lower()
+        
+    if yourChoice == "quit":
+        print("Thanks for playing!")
+        break
 
     print("PC: ", pcChoice)
     print("You: ", yourChoice)
